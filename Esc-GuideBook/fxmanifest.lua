@@ -25,11 +25,4 @@ server_scripts {
     'server/server.lua'
 }
 
-escrow_ignore {
-    "config.lua",
-    "client.lua",
-    "server.lua",
-    "README.lua"
-}
-
 lua54 'yes'
