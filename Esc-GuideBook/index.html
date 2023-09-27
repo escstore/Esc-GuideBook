@@ -1,0 +1,674 @@
+<html>
+<header>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="script/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</header>
+
+<body>
+
+    <div class="menu hidden" id="menu">
+  
+          <img class="main-rectangle" src="assets/main-recantgle.png" /> 
+          <img class="main-line" src="assets/line-1.png" />
+  
+              <p class="GUIDE-BOOK"><span class="light-blue">GUIDE</span> <span class="white"> BOOK</span></p>
+  
+              <p class="escape-text">
+              <span class="white">ES</span><span class="light-blue">C</span><span class="white">APE</span>
+              </p>
+  
+          <img class="line-2" src="assets/line-2.png" />
+          <img class="store-logo" src="assets/store-logo.png" />
+          <p class="server-name"><span class="light-blue">Esc</span> <span class="white"> RolePlay</span></p>
+
+  
+  
+      <div class="welcome-screen" id="welcome-screen">
+  
+          <div class="welcome-text-1">WELCOME</div>
+          <div class="news-text-1" id="news-text-1"><h1>NEWS</h1></div>
+          <div class="jobs-text-1" id="jobs-text-1"><h1>JOBS</h1></div>
+          <img class="line-3" src="assets/line-3.png" />
+          <img class="line-4" src="assets/line-2.png" />
+          <img class="line-5" src="assets/line-4.png" />
+          <p class="text-1">
+              <span class="light-blue">Welcome</span>
+              <span class="white"> To </span>
+              <span class="light-blue">Esc</span>
+              <span class="white"> RolePlay</span>
+          </p>
+          <img class="line-8" src="assets/line-6.png" />
+          <p class="paragrapg-1">
+              Above all, have fun and enjoy your time here at&nbsp;&nbsp;&nbsp;&nbsp; [Server Name]. We&#39;re here to create
+              memorable adventures together.
+          </p>
+          <img class="pic-1" src="assets/pic-1.png" />
+          <p class="text-2"><span class="light-blue">AN</span><span class="white">NOUNCES!</span></p>
+          <img class="line-9" src="assets/line-6.png" />
+          <img class="pic-2" src="assets/pic-2.png" />
+          <p class="paragraph-2">
+              Challenge yourself with our monthly community quest! Complete it for a chance to win exclusive rewards and
+              recognition.
+          </p>
+      </div>
+  
+      <div class="news-screen hidden" id="news-screen">
+          
+          <div class="news-text-2">NEWS</div>
+          <div class="welcome-text-2" id="welcome-text-2"><h1>WELCOME</h1></div>
+          <div class="jobs-text-2" id="jobs-text-2"><h1>JOBS</h1></div>
+          <img class="line-4" src="assets/line-2.png" />
+          <img class="line-10" src="assets/line-4.png" />
+          <p class="text-3">EVENTS</p>
+          <img class="line-11" src="assets/line-6.png" />
+          <p class="paragragh-3">
+              A roleplay event is a creative and interactive gathering where participants take on fictional characters and
+              immerse themselves in a carefully crafted scenario. These events often take place in various settings, such as
+              historical, fantasy, or futuristic worlds, allowing participants to step into the shoes of their chosen
+              characters and engage in storytelling, problem-solving, and improvisation. Roleplay events can range from
+              tabletop games like Dungeons &amp; Dragons to live-action events where participants physically act out their
+              characters&#39; actions and dialogue. These events provide an opportunity for individuals to unleash their
+              imagination, develop storytelling skills, and enjoy collaborative adventures with fellow enthusiasts, making
+              them a popular choice for entertainment and social engagement.
+              </p>
+          <img class="pic-3" src="assets/pic-3.png" />
+      </div>
+  
+      <div class="jobs-screen hidden" id="jobs-screen">
+          
+          <div class="jobs-text-3">JOBS</div>
+          <div class="welcome-text-3" id="welcome-text-3"><h1>WELCOME</h1></div>
+          <div class="news-text-3" id="news-text-3"><h1>NEWS</h1></div>
+          <img class="line-12" src="assets/line-6.png" />
+          <img class="line-13" src="assets/line-7.png" />
+          <img class="line-14" src="assets/line-7.png" />
+          <p class="text-4"><span class="light-blue">Available</span> <span class="white"> Jobs!</span></p>
+          <img class="line-15" src="assets/line-8.png" />
+          
+          <div class="jobs">
+  
+              <div class="job-1" style="background-color: #242f41" id="job-1">
+                  <img class="job-icon-1" src="assets/police-icon.png" />
+                  <div class="job-1-text" style="color: #fff">Police</div>
+              </div>
+  
+              <div class="job-2" style="background-color: #962B2B" id="job-2">
+                  <img class="job-icon-2" src="assets/ambulance-icon.png" />
+                  <div class="job-2-text" style="color: #fff">Ambulance</div>
+              </div>
+  
+              <div class="job-3" style="background-color: #FAC848" id="job-3">
+                  <img class="job-icon-3" src="assets/fire-fighter-icon.png" />
+                  <div class="job-3-text" style="color: #009244">Fire Fighter</div>
+              </div>
+  
+              <div class="job-4" style="background-color: #000" id="job-4">
+                  <img class="job-icon-4" src="assets/taxi-icon.png" /> 
+                  <div class="job-4-text" style="color: #fdaf02">Taxi</div>
+              </div>
+  
+              <div class="job-5" style="background-color: #f9901d" id="job-5">
+                  <img class="job-icon-5" src="assets/garbage-icon.png" />
+                  <div class="job-5-text" style="color: #1fb35b">Garbage</div>
+              </div>
+  
+              <div class="job-6" style="background-color: #002B44" id="job-6">
+                  <img class="job-icon-6" src="assets/miner-icon.png" />
+                  <div class="job-6-text" style="color: #00d6d6">Miner</div>
+              </div>
+  
+              <div class="job-7" style="background-color: #fbc001" id="job-7">
+                  <img class="job-icon-7" src="assets/tanker-icon.png" />
+                  <div class="job-7-text" style="color: #fff">Tanker</div>
+              </div>
+  
+              <div class="job-8" style="background-color: #FFFFFF" id="job-8">
+                  <img class="job-icon-8" src="assets/delivery-icon.png" />
+                  <div class="job-8-text" style="color: #de3436">Dilivery</div>
+              </div>
+  
+              <div class="job-9" style="background-color: #FFFFFF" id="job-9">
+                  <img class="job-icon-9" src="assets/truck-icon.png" />
+                  <div class="job-9-text" style="color: #ef5000">Truck</div>
+              </div>
+  
+              <div class="job-10" style="background-color: #A1A1A1" id="job-10">
+                  <img class="job-icon-10" src="assets/illegal-icon.png" />
+                  <div class="job-10-text" style="color: #000">ILLEGALE</div>
+              </div>
+  
+          </div>
+      </div>
+  
+      <div class="job-info hidden" id="job-info">
+  
+          <img class="line-18" src="assets/line-2.png" />
+          
+  
+  
+          <div class="job-1-screen hidden" id="job-1-screen">
+  
+              <p class="text-5"><span class="light-blue">POLICE </span> <span class="white">JOB</span></p>
+  
+              <div class="button-1" id="button-1">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                   <img class="border-icon" src="/assets/police-icon.png">
+                   <div class="border-text">Police</div>
+                   <img class="line-19" src="assets/line-10.png" />
+                   <p class="job-paragraph-1">
+                      These virtual law enforcement officers are responsible for maintaining order and responding to a variety of
+                      in-game emergencies, such as crimes and accidents. They perform tasks like conducting traffic stops,
+                      investigating crimes, and engaging in high-speed pursuits while adhering to strict roleplay rules and server
+                      regulations. This role demands quick decision-making, effective communication, and teamwork.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-1-1.png">
+                  <img class="job-1-2" src="/assets/job-1-2.png">
+                  <img class="job-1-3" src="/assets/job-1-3.png">
+              </div>
+          </div>
+  
+          <div class="job-2-screen hidden" id="job-2-screen">
+              <p class="text-6"><span class="red">AMBULANCE </span> <span class="white">JOB</span></p>
+  
+              <div class="button-2" id="button-2">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border" >
+                   <img class="border-icon" src="/assets/ambulance-icon.png">
+                   <div class="border-text">Ambulance</div>
+                   <img class="line-20" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      Ambulance Job FiveM is a popular role-playing game mode for the video game Grand Theft Auto V.
+                      In this game mode, players take on the role of an ambulance driver or paramedic and respond to emergency calls.
+                      The goal of the game is to provide medical assistance to patients and transport them to the hospital.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-2-1.png">
+                  <img class="job-1-2" src="/assets/job-2-2.png">
+                  <img class="job-1-3" src="/assets/job-2-3.png">
+              </div>
+          </div>
+  
+          <div class="job-3-screen hidden" id="job-3-screen">
+              <p class="text-7"><span class="green">FIRE FIGHTER </span> <span class="white">JOB</span></p>
+  
+              <div class="button-3" id="button-3">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                   <img class="border-icon" src="/assets/fire-fighter-icon.png">
+                   <div class="border-text">Fire Fighter</div>
+                   <img class="line-21" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      Fire Fighter Job FiveM is a popular role-playing game mode for the video game Grand Theft Auto V. In this game mode, players take on the role of a firefighter and respond to emergency calls. The goal of the game is to extinguish fires, rescue civilians, and provide medical assistance.
+                      give me a 3 line paragraph about police job fivem
+                  </p>
+                  <img class="job-1-1" src="/assets/job-3-1.png">
+                  <img class="job-1-2" src="/assets/job-3-2.png">
+                  <img class="job-1-3" src="/assets/job-3-3.png">
+              </div>
+          </div>
+          
+          <div class="job-4-screen hidden" id="job-4-screen">
+              <p class="text-8"><span class="orange">TAXI </span> <span class="white">JOB</span></p>
+  
+              <div class="button-4" id="button-4">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                   <img class="border-icon" src="/assets/taxi-icon.png">  
+                   <div class="border-text">Taxi</div>
+                   <img class="line-22" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      Taxi Job FiveM is a popular role-playing game mode for the video game Grand Theft Auto V. In this game mode, players take on the role of a taxi driver and transport passengers to their destinations. The goal of the game is to provide a safe and efficient transportation service to the citizens of Los Santos.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-4-1.png">
+                  <img class="job-1-2" src="/assets/job-4-2.png">
+                  <img class="job-1-3" src="/assets/job-4-3.png">
+              </div>
+          </div>
+  
+          <div class="job-5-screen hidden" id="job-5-screen">
+              <p class="text-9"><span class="yellow">GARBAGE </span> <span class="white">JOB</span></p>
+  
+              <div class="button-5" id="button-5">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                   <img class="border-icon" src="/assets/garbage-icon.png">
+                   <div class="border-text">Garbage</div>
+                   <img class="line-23" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      Garbage Job FiveM is a popular role-playing game mode for the video game Grand Theft Auto V. In this game mode, players take on the role of a garbage collector and collect trash from dumpsters and bins around the city. The goal of the game is to keep the city clean and free of garbage.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-5-1.png">
+                  <img class="job-1-2" src="/assets/job-5-2.png">
+                  <img class="job-1-3" src="/assets/job-5-3.png">
+              </div>
+          </div>
+  
+          <div class="job-6-screen hidden" id="job-6-screen">
+              <p class="text-10"><span class="light-blue">MINER </span> <span class="white">JOB</span></p>
+  
+              <div class="button-6" id="button-6">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                   <img class="border-icon" src="/assets/miner-icon.png">
+                   <div class="border-text">Miner</div>
+                   <img class="line-24" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      Miner Job FiveM is a popular role-playing game mode for the video game Grand Theft Auto V. In this game mode, players take on the role of a miner and extract resources from the ground. The goal of the game is to collect as many resources as possible and sell them for a profit.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-6-1.png">
+                  <img class="job-1-2" src="/assets/job-6-2.png">
+                  <img class="job-1-3" src="/assets/job-6-3.png">
+              </div>
+          </div>
+  
+          <div class="job-7-screen hidden" id="job-7-screen">
+              <p class="text-11"><span class="yellow">TANKER </span> <span class="white">JOB</span></p>
+  
+              <div class="button-7" id="button-7">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                   <img class="border-icon" src="/assets/tanker-icon.png">
+                   <div class="border-text">Tanker</div>
+                   <img class="line-25" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      A tanker job in FiveM is a job where a player transports goods from one location to another.
+                      This can be done using a variety of vehicles, such as trucks, trains, and airplanes.
+                      The player is responsible for ensuring that the goods are delivered safely and on time.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-7-1.png">
+                  <img class="job-1-2" src="/assets/job-7-2.png">
+                  <img class="job-1-3" src="/assets/job-7-3.png">
+              </div>
+          </div>
+  
+          <div class="job-8-screen hidden" id="job-8-screen">
+              <p class="text-12"><span class="red">DELIVERY </span> <span class="white">JOB</span></p>
+  
+              <div class="button-8" id="button-8">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                   <img class="border-icon" src="/assets/delivery-icon.png">
+                   <div class="border-text">Delivery</div>
+                   <img class="line-25" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      A delivery job in FiveM is a job where a player transports goods from one location to another.
+                      This can be done using a variety of vehicles, such as cars, vans, and trucks.
+                      The player is responsible for ensuring that the goods are delivered safely and on time.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-8-1.png">
+                  <img class="job-1-2" src="/assets/job-8-2.png">
+                  <img class="job-1-3" src="/assets/job-8-3.png">
+              </div>
+          </div>
+  
+          <div class="job-9-screen hidden" id="job-9-screen">
+              <p class="text-13"><span class="orange">TRUCKER </span> <span class="white">JOB</span></p>
+  
+              <div class="button-9" id="button-9">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                   <img class="border-1-icon" src="/assets/truck-icon.png">
+                   <div class="border-text">Trucker</div>
+                   <img class="line-27" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      A trucker job in FiveM is a job where a player transports goods from one location to another.
+                      This can be done using a variety of vehicles, such as semi-trucks, dump trucks, and flatbeds.
+                      The player is responsible for ensuring that the goods are delivered safely and on time.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-9-1.png">
+                  <img class="job-1-2" src="/assets/job-9-2.png">
+                  <img class="job-1-3" src="/assets/job-9-3.png">
+              </div>
+          </div>
+  
+          <div class="job-10-screen hidden" id="job-10-screen">
+              <p class="text-14"><span class="grey">ILLEGALE </span> <span class="white">JOB</span></p>
+  
+              <div class="button-10" id="button-10">
+              <div class="text-back-1">BACK</div>
+              <img class="back-button-1" src="/assets/back-button-icon.png">
+              </div>
+  
+              <div class="jobs-border">
+                  <img class="border-2-icon" src="/assets/illegal-icon.png">
+                   <div class="border-text">ILLEGALE</div>
+                   <img class="line-25" src="assets/line-10.png" />
+                   <p class="job-paragraph-2">
+                      An illegal job in FiveM is a job where a player engages in illegal activities, such as drug dealing, prostitution, and murder.
+                      This can be done using a variety of methods, such as selling drugs to other players, engaging in prostitution, and killing other players.
+                      The player is responsible for ensuring that they do not get caught by the police or other law enforcement.
+                  </p>
+                  <img class="job-1-1" src="/assets/job-10-1.png">
+                  <img class="job-1-2" src="/assets/job-10-2.png">
+                  <img class="job-1-3" src="/assets/job-10-3.png">
+              </div>
+          </div>
+  
+      </div>
+  
+    </div>
+  
+   </div>
+      
+
+<script>
+        
+// Get references to the buttons and divs
+var showWelcomeButton = document.getElementById("jobs-text-1");
+var settingscreen = document.getElementById("jobs-screen");
+var showOtherButton = document.getElementById("news-text-1");
+var welcomeScreen = document.getElementById("welcome-screen");
+var otherDiv = document.getElementById("news-screen");
+
+// Add event listeners to the buttons
+showWelcomeButton.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    welcomeScreen.style.display = "none";
+    settingscreen.style.display = "block";
+});
+
+showOtherButton.addEventListener("click", function() {
+    // Show the other div and hide the welcome screen
+    welcomeScreen.style.display = "none";
+    otherDiv.style.display = "block";
+});
+
+// Get references to the buttons and divs
+var showWelcomeButton1 = document.getElementById("welcome-text-3");
+var settingscreen1 = document.getElementById("welcome-screen");
+var showOtherButton1 = document.getElementById("news-text-3");
+var welcomeScreen1 = document.getElementById("jobs-screen");
+var otherDiv1 = document.getElementById("news-screen");
+
+// Add event listeners to the buttons
+showWelcomeButton1.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    welcomeScreen1.style.display = "none";
+    settingscreen1.style.display = "block";
+});
+
+showOtherButton1.addEventListener("click", function() {
+    // Show the other div and hide the welcome screen
+    welcomeScreen1.style.display = "none";
+    otherDiv1.style.display = "block";
+});
+
+// Get references to the buttons and divs
+var showWelcomeButton2 = document.getElementById("welcome-text-2");
+var settingscreen2 = document.getElementById("welcome-screen");
+var showOtherButton2 = document.getElementById("jobs-text-2");
+var welcomeScreen2 = document.getElementById("news-screen");
+var otherDiv2 = document.getElementById("jobs-screen");
+
+// Add event listeners to the buttons
+showWelcomeButton2.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    welcomeScreen2.style.display = "none";
+    settingscreen2.style.display = "block";
+});
+
+showOtherButton2.addEventListener("click", function() {
+    // Show the other div and hide the welcome screen
+    welcomeScreen2.style.display = "none";
+    otherDiv2.style.display = "block";
+});
+
+// Get references to the buttons and divs
+var screen = document.getElementById("job-1-screen");
+var button = document.getElementById("button-1");
+var btn = document.getElementById("job-1");
+var main = document.getElementById("jobs-screen");
+var upperscreen = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main.style.display = "none";
+    upperscreen.style.display = "block";
+    screen.style.display = "block";
+});
+
+button.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main.style.display = "block";
+    upperscreen.style.display = "none";
+    screen.style.display = "none";
+});
+
+var screen1 = document.getElementById("job-2-screen");
+var button1 = document.getElementById("button-2");
+var btn1 = document.getElementById("job-2");
+var main1 = document.getElementById("jobs-screen");
+var upperscreen1 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn1.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main1.style.display = "none";
+    upperscreen1.style.display = "block";
+    screen1.style.display = "block";
+});
+
+button1.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main1.style.display = "block";
+    upperscreen1.style.display = "none";
+    screen1.style.display = "none";
+});
+
+var screen2 = document.getElementById("job-3-screen");
+var button2 = document.getElementById("button-3");
+var btn2 = document.getElementById("job-3");
+var main2 = document.getElementById("jobs-screen");
+var upperscreen2 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn2.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main2.style.display = "none";
+    upperscreen2.style.display = "block";
+    screen2.style.display = "block";
+});
+
+button2.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main2.style.display = "block";
+    upperscreen2.style.display = "none";
+    screen2.style.display = "none";
+});
+
+// Get references to the buttons and divs
+var screen3 = document.getElementById("job-4-screen");
+var button3 = document.getElementById("button-4");
+var btn3 = document.getElementById("job-4");
+var main3 = document.getElementById("jobs-screen");
+var upperscreen3 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn3.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main3.style.display = "none";
+    upperscreen3.style.display = "block";
+    screen3.style.display = "block";
+});
+
+button3.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main3.style.display = "block";
+    upperscreen3.style.display = "none";
+    screen3.style.display = "none";
+});
+
+// Get references to the buttons and divs
+var screen4 = document.getElementById("job-5-screen");
+var button4 = document.getElementById("button-5");
+var btn4 = document.getElementById("job-5");
+var main4 = document.getElementById("jobs-screen");
+var upperscreen4 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn4.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main4.style.display = "none";
+    upperscreen4.style.display = "block";
+    screen4.style.display = "block";
+});
+
+button4.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main4.style.display = "block";
+    upperscreen4.style.display = "none";
+    screen4.style.display = "none";
+});
+
+// Get references to the buttons and divs
+var screen5 = document.getElementById("job-6-screen");
+var button5 = document.getElementById("button-6");
+var btn5 = document.getElementById("job-6");
+var main5 = document.getElementById("jobs-screen");
+var upperscreen5 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn5.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main5.style.display = "none";
+    upperscreen5.style.display = "block";
+    screen5.style.display = "block";
+});
+
+button5.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main5.style.display = "block";
+    upperscreen5.style.display = "none";
+    screen5.style.display = "none";
+});
+
+// Get references to the buttons and divs
+var screen6 = document.getElementById("job-7-screen");
+var button6 = document.getElementById("button-7");
+var btn6 = document.getElementById("job-7");
+var main6 = document.getElementById("jobs-screen");
+var upperscreen6 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn6.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main6.style.display = "none";
+    upperscreen6.style.display = "block";
+    screen6.style.display = "block";
+});
+
+button6.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main6.style.display = "block";
+    upperscreen6.style.display = "none";
+    screen6.style.display = "none";
+});
+
+
+// Get references to the buttons and divs
+var screen7 = document.getElementById("job-8-screen");
+var button7 = document.getElementById("button-8");
+var btn7 = document.getElementById("job-8");
+var main7 = document.getElementById("jobs-screen");
+var upperscreen7 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn7.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main7.style.display = "none";
+    upperscreen7.style.display = "block";
+    screen7.style.display = "block";
+});
+
+button7.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main7.style.display = "block";
+    upperscreen7.style.display = "none";
+    screen7.style.display = "none";
+});
+
+
+// Get references to the buttons and divs
+var screen8 = document.getElementById("job-9-screen");
+var button8 = document.getElementById("button-9");
+var btn8 = document.getElementById("job-9");
+var main8 = document.getElementById("jobs-screen");
+var upperscreen8 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn8.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main8.style.display = "none";
+    upperscreen8.style.display = "block";
+    screen8.style.display = "block";
+});
+
+button8.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main8.style.display = "block";
+    upperscreen8.style.display = "none";
+    screen8.style.display = "none";
+});
+
+// Get references to the buttons and divs
+var screen9 = document.getElementById("job-10-screen");
+var button9 = document.getElementById("button-10");
+var btn9 = document.getElementById("job-10");
+var main9 = document.getElementById("jobs-screen");
+var upperscreen9 = document.getElementById("job-info");
+
+// Add event listeners to the buttons
+btn9.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main9.style.display = "none";
+    upperscreen9.style.display = "block";
+    screen9.style.display = "block";
+});
+
+button9.addEventListener("click", function() {
+    // Show the welcome screen and hide the other div
+    main9.style.display = "block";
+    upperscreen9.style.display = "none";
+    screen9.style.display = "none";
+});
+
+</script>
+
+   
+  </body>
+
+</html>
