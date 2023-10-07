@@ -1,6 +1,6 @@
 
 function checkVersion() 
-    local versionUrl = "https://raw.githubusercontent.com/nxstore8/check_version_information/main/esc_loadingscreen.json"
+    local versionUrl = "https://raw.githubusercontent.com/escstore/Check-Version/main/Esc-GuideBook.json"
     local fxVersion = GetResourceMetadata(GetCurrentResourceName(), 'version', 0)
     PerformHttpRequest(versionUrl, function(errorCode, resultData, resultHeaders)
         if errorCode == 200 then
